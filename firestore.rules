@@ -1,0 +1,27 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /bookings/{bookingId} {
+      allow read: if true;
+      allow create: if request.resource.data.status == "confirmed"
+        && request.resource.data.paid == true
+        && request.resource.data.paymentMethod == "GCash"
+        && request.resource.data.paymentReference is string
+        && request.resource.data.paymentReference.size() > 0
+        && request.resource.data.name is string
+        && request.resource.data.contact is string;
+      allow update: if resource.data.status != "cancelled"
+        && request.resource.data.status == "cancelled"
+        && request.resource.data.reservationNo == resource.data.reservationNo
+        && request.resource.data.date == resource.data.date
+        && request.resource.data.time == resource.data.time
+        && request.resource.data.name == resource.data.name;
+      allow delete: if false;
+    }
+
+    match /counters/{counterId} {
+      allow read, write: if true;
+    }
+  }
+}
