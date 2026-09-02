@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-labelledby="title desc">
+  <title id="title">BOSS G Pickleball Court</title>
+  <desc id="desc">Orange BOSS G pickleball court logo on transparent background</desc>
+  <g fill="#ff5b0a">
+    <path d="M164 42h234l-65 52H216c-23 0-42 19-42 42v58l-63 48 14-111c7-52 48-89 99-89z"/>
+    <path d="M429 103h-98c-30 0-54 24-54 54v65h92l-50 42H231c-18 0-32-14-32-32v-88c0-32 26-58 58-58h172z"/>
+    <path d="M178 363h235c23 0 42-19 42-42v-58l63-48-14 111c-7 52-48 89-99 89H171z"/>
+    <path d="M397 192h-95c-19 0-34 15-34 34v57h94l51-43h-97v-9c0-7 6-13 13-13h68z"/>
+    <path d="M36 408l204-161h34l-38 31 96-1-253 151z"/>
+    <path d="M565 19L350 180h-35l39-31-95-1z"/>
+  </g>
+  <g font-family="Arial Black,Arial,sans-serif" font-weight="900" text-anchor="middle">
+    <text x="183" y="462" fill="#f5f2eb" font-size="91" letter-spacing="2">BOSS</text>
+    <text x="474" y="462" fill="#ff5b0a" font-size="91">G</text>
+    <text x="300" y="505" fill="#ff5b0a" font-size="27" letter-spacing="13">PICKLEBALL COURT</text>
+  </g>
+</svg>
